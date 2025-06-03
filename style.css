@@ -1,0 +1,110 @@
+:root {
+  --bg-color: #f4f4f9;
+  --primary: #4a90e2;
+  --text-dark: #333;
+  --text-light: #777;
+  --hover: #357abd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: var(--bg-color);
+  color: var(--text-dark);
+  padding: 1rem;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d0e3ff;
+}
+
+.seccion {
+  margin: 2rem 0;
+}
+
+.seccion h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills li {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.skills li:hover {
+  background: var(--hover);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e0e0e0;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100px;
+  }
+}
